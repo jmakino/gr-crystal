@@ -101,7 +101,13 @@ lib LibGR
   fun gr_setarrowstyle(i: Int32)
   fun gr_setarrowsize(x: Float64)
   fun gr_drawarrow(x: Float64, x1: Float64, x2: Float64, x3: Float64)
+end
 
+@[Link(ldflags: "-L `echo $GRDIR`/lib -lGRM -Wl,-rpath,`echo $GRDIR`/lib")]
+lib LibGRM
+  fun grm_args_new() : Pointer(Int32)
+  fun grm_args_push(grm_args_t: Int32*, key: UInt8*, value_foramt: UInt8*, ...)
+  fun grm_plot(grm_args_t: Int32*)
 end
 
 module GR
