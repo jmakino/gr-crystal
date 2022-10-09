@@ -15,7 +15,7 @@ lib LibGR
   fun gr_configurews()
   fun gr_clearws()
   fun gr_updatews()
-  fun gr_polyline(n: Int32, x: Float64*, x: Float64*) : Int32
+  fun gr_polyline(n: Int32, x: Float64*, x1: Float64*) : Int32
   fun gr_axes(x_tick: Float64, y_tick: Float64, x_org: Float64, y_org: Float64,
         major_x: Int32, major_y: Int32, tick_size: Float64) : Int32
 
