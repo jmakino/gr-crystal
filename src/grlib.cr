@@ -37,7 +37,7 @@ lib LibGR
   fun gr_setcharspace(x: Float64)
   fun gr_settextcolorind(i: Int32)
   fun gr_setcharheight(x: Float64)
-  fun gr_setcharup(x: Float64, x: Float64)
+  fun gr_setcharup(x: Float64, x2: Float64)
   fun gr_settextpath(i: Int32)
   fun gr_settextalign(i: Int32, i1: Int32)
   fun gr_setfillintstyle(i: Int32)
