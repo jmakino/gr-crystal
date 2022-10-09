@@ -20,8 +20,8 @@ lib LibGR
         major_x: Int32, major_y: Int32, tick_size: Float64) : Int32
 
   fun gr_polymarker(i: Int32, xa: Float64*, xb: Float64*)
-  fun gr_text(x: Float64, x: Float64, c: UInt8*)
-  fun gr_mathtex(x: Float64, x: Float64, c: UInt8*)
+  fun gr_text(x: Float64, x2: Float64, c: UInt8*)
+  fun gr_mathtex(x: Float64, x2: Float64, c: UInt8*)
   fun gr_fillarea(i: Int32, xa: Float64*, xb: Float64*)
   fun gr_cellarray(x0: Float64, x1: Float64, y0: Float64, y1: Float64, i0: Int32, i1: Int32, i2: Int32, i3: Int32, i4: Int32, i5: Int32, ia: Int32 *)
 
@@ -54,7 +54,7 @@ lib LibGR
   fun gr_redrawsegws
   fun gr_setspace(x: Float64, x1: Float64, i: Int32, i1: Int32)
   fun gr_setscale(i: Int32)
-  fun gr_textext(x: Float64, x: Float64, c: UInt8*) : Int32
+  fun gr_textext(x: Float64, x2: Float64, c: UInt8*) : Int32
   fun gr_grid(x: Float64, x1: Float64, x2: Float64, x3: Float64,
               i: Int32, i1: Int32)
   fun gr_verrorbars(i: Int32, xa: Float64*, xb: Float64*, xc: Float64*, xd: Float64*)
